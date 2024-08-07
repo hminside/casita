@@ -1,0 +1,104 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(default.css);
+
+
+.book_info , .refund_info {
+    padding-top: 50px;
+    padding-left: 35px;
+    height: 530px;
+}
+
+.refund_info {
+    height: 100vh;
+}
+
+.refund_info > h1 , .book_info > h1 {
+    display: block;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.refund_info > ul > li , .book_info > ul > li{
+    padding: 10px;
+    line-height: 30px;
+}
+
+
+.go_to_book {
+    padding-top: 200px;
+    text-align: center;
+    height: 100vh;
+}
+
+.go_to_book > h3 {
+    padding: 30px;
+}
+
+.go_to_book > ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.go_to_book > ul > li > a.link , .go_to_book > ul > li > a.link_hover {
+    text-align: center;
+    font-size:18px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 10px; */
+    border-radius: 20px;
+    background-color: rgba(175, 175, 175, 0.5);
+    color: #fff;
+}
+
+.go_to_book > ul > li > a.link_hover {
+    display: none;
+}
+
+.go_to_book > ul > li:hover a.link {
+    display: none;
+}
+
+.go_to_book > ul > li:hover > a.link_hover {
+    display: block;
+    background-color: rgba(175, 175, 175, 0.7);
+    color: white;
+}
+
+.go_to_book > ul > li > a > img {
+    height: 50px;
+}
+
+@media screen and (max-width:480px) {
+
+    .book_info , .refund_info , .go_to_book {
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+
+    }
+    .refund_info > h1 , .book_info > h1 {
+        padding: 25px 10px;
+        margin-bottom: 0;
+    }
+
+    .go_to_book {
+        padding-top: 100px;
+    }
+    
+    .go_to_book > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+
+
+
+}
